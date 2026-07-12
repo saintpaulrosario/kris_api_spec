@@ -1,0 +1,48 @@
+info:
+  name: load script
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://{{ip}}:{{port}}/script
+  body:
+    type: json
+    data: |
+      {
+        "language": "mande",
+        "version": 1,
+        "refSheet": {
+          "name": "script",
+          "index": 9,
+          "columns": {
+            "word": {
+              "ordinal": 1,
+            }
+          }
+        },
+        "sheet": {
+          "name": "word",
+          "index": 1,
+          "columns": {
+            "word": {
+              "row": 0,
+              "ordinal": 1,
+              "text": 5,
+              "rank": 6
+            },
+            "script": {
+              "row": 0,
+              "ordinal": 2,
+              "rank": 0
+            }
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
