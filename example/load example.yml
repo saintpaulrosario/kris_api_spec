@@ -8,34 +8,30 @@ http:
   url: http://{{ip}}:{{port}}/example
   body:
     type: json
-    data: |-
-      "document": {
+    data: |
+      {
         "language": "mande",
         "version": 1,
-        refCol: {
-          1,
-          2
-        },
         "refSheet": {
           "name": "example_word",
           "index": 9,
-          "colums": {
+          "columns": {
             "language": {
-              "ordinal": 5,
+              "ordinal": 5
             },
             "dialect": {
-              "ordinal": 6,
+              "ordinal": 6
             },
             "word": {
               "ordinal": 3,
-              "rank": 4,
+              "rank": 4
             },
             "example": {
               "ordinal": 1,
               "rank": 2,
               "reference": {
                 "ordinal": true,
-                "rank": true,
+                "rank": true
               }
             }
           }
@@ -43,20 +39,21 @@ http:
         "sheet": {
           "name": "example",
           "index": 8,
-          "colums": {
+          "columns": {
             "example": {
               "row": 0,
               "ordinal": 1,
               "rank": 2,
-              "text":4
+              "text": 4
             },
-                  "script": {
+            "script": {
               "row": 0,
               "ordinal": 3,
-              "rank": 0,
+              "rank": 0
             }
           }
         }
+      }
   auth: inherit
 
 settings:
