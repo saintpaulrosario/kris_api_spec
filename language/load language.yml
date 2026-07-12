@@ -16,7 +16,7 @@ http:
           "name": "language",
           "index": 9,
           "columns": {
-            "word": {
+            "language": {
               "ordinal": 1,
               "reference": {
                 "ordinal": true
