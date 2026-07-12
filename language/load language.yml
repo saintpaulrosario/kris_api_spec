@@ -1,11 +1,11 @@
 info:
-  name: load script
+  name: load language
   type: http
   seq: 1
 
 http:
   method: POST
-  url: http://{{ip}}:{{port}}/{{endpoint}}
+  url: http://{{ip}}:{{port}}/language
   body:
     type: json
     data: |-
@@ -13,7 +13,7 @@ http:
         "language": "mande",
         "version": 1,
         "refSheet": {
-          "name": "script",
+          "name": "language",
           "index": 9,
           "columns": {
             "word": {
@@ -36,6 +36,9 @@ http:
             },
             "script": {
               "ordinal": 2
+            },
+            "language": {
+              "ordinal": 3
             }
           }
         }

@@ -1,5 +1,5 @@
 info:
-  name: load script
+  name: load dialect
   type: http
   seq: 1
 
@@ -13,10 +13,10 @@ http:
         "language": "mande",
         "version": 1,
         "refSheet": {
-          "name": "script",
+          "name": "dialect",
           "index": 9,
           "columns": {
-            "word": {
+            "dialect": {
               "ordinal": 1,
               "reference": {
                 "ordinal": true
@@ -36,6 +36,12 @@ http:
             },
             "script": {
               "ordinal": 2
+            },
+            "language": {
+              "ordinal": 3
+            },
+            "dialect": {
+              "ordinal": 4
             }
           }
         }
