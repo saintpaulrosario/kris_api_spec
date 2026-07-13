@@ -12,6 +12,18 @@ http:
       {
         "language": "mande",
         "version": 1,
+        "refSheet": {
+          "name": "dialect",
+          "index": 9,
+          "columns": {
+            "dialect": {
+              "ordinal": 1,
+              "reference": {
+                "ordinal": true
+              }
+            }
+          }
+        },
         "sheet": {
           "name": "word",
           "index": 1,
@@ -20,7 +32,8 @@ http:
               "row": 0,
               "ordinal": 1,
               "text": 5,
-              "rank": 6
+              "rank": 6,
+              "root": 7
             },
             "script": {
               "ordinal": 2
