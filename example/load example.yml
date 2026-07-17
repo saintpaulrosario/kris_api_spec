@@ -1,14 +1,14 @@
 info:
   name: load example
   type: http
-  seq: 7
+  seq: 1
 
 http:
   method: POST
   url: http://{{ip}}:{{port}}/example
   body:
     type: json
-    data: |
+    data: |-
       {
         "language": "mande",
         "version": 1,
@@ -17,14 +17,20 @@ http:
           "index": 9,
           "columns": {
             "language": {
-              "ordinal": 5
+              "ordinal": 6
             },
             "dialect": {
-              "ordinal": 6
+              "ordinal": 7
+            },
+            "script": {
+              "ordinal": 5
             },
             "word": {
               "ordinal": 3,
-              "rank": 4
+              "rank": 4,
+              "sheet": {
+                "name": "word"
+              }
             },
             "example": {
               "ordinal": 1,

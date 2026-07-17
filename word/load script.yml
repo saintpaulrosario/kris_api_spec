@@ -1,0 +1,323 @@
+info:
+  name: load script
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://{{ip}}:{{port}}/{{endpoint}}?type=script
+  params:
+    - name: type
+      value: script
+      type: query
+  body:
+    type: json
+    data: |-
+      {
+        "language": "mande",
+        "version": 1,
+        "refSheet": {
+          "name": "script",
+          "index": 9,
+          "columns": {
+            "word": {
+              "ordinal": 1,
+              "reference": {
+                "ordinal": true
+              }
+            }
+          }
+        },
+        "sheet": {
+          "name": "word",
+          "index": 1,
+          "columns": {
+            "word": {
+              "row": 0,
+              "ordinal": 1,
+              "text": 5,
+              "rank": 6,
+              "root": 7
+            },
+            "script": {
+              "ordinal": 2
+            },
+            "language": {
+              "ordinal": 3
+            },
+            "dialect": {
+              "ordinal": 4
+            }
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: post script response
+    request:
+      url: http://{{ip}}:{{port}}/{{endpoint}}?type=script
+      method: POST
+      params:
+        - name: type
+          value: script
+          type: query
+      body:
+        type: json
+        data: |-
+          {
+            "language": "mande",
+            "version": 1,
+            "refSheet": {
+              "name": "script",
+              "index": 9,
+              "columns": {
+                "word": {
+                  "ordinal": 1,
+                  "reference": {
+                    "ordinal": true
+                  }
+                }
+              }
+            },
+            "sheet": {
+              "name": "word",
+              "index": 1,
+              "columns": {
+                "word": {
+                  "row": 0,
+                  "ordinal": 1,
+                  "text": 5,
+                  "rank": 6,
+                  "root": 7
+                },
+                "script": {
+                  "ordinal": 2
+                },
+                "language": {
+                  "ordinal": 3
+                },
+                "dialect": {
+                  "ordinal": 4
+                }
+              }
+            }
+          }
+    response:
+      status: 201
+      statusText: Created
+      headers:
+        - name: vary
+          value: origin,access-control-request-method,access-control-request-headers,accept-encoding
+        - name: content-type
+          value: application/json
+        - name: transfer-encoding
+          value: chunked
+        - name: date
+          value: Tue, 14 Jul 2026 22:44:00 GMT
+        - name: keep-alive
+          value: timeout=60
+        - name: connection
+          value: keep-alive
+      body:
+        type: json
+        data: |-
+          {
+            "message": null,
+            "success": true,
+            "payload": [
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:43:59.867013",
+                "id": "2437200c-d65b-4d06-8a2e-38b7f5d2c41f",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:43:59.867013",
+                "ordinal": 25,
+                "payloads": [],
+                "sku": "f9a3423b-35b1-4daf-b178-55178553eb2b",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              },
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:43:59.955019",
+                "id": "3c9dac24-09e9-49f1-b19a-20c614f1b397",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:43:59.955019",
+                "ordinal": 23,
+                "payloads": [],
+                "sku": "c9c89829-9753-458e-a30a-deb5de7401e7",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              },
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:43:59.974103",
+                "id": "030f6456-642c-4c81-a857-699c5a307415",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:43:59.974103",
+                "ordinal": 24,
+                "payloads": [],
+                "sku": "6e31ff2f-3570-4a65-aa5b-529862eda1e1",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              },
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:43:59.955019",
+                "id": "3c9dac24-09e9-49f1-b19a-20c614f1b397",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:43:59.955019",
+                "ordinal": 23,
+                "payloads": [],
+                "sku": "c9c89829-9753-458e-a30a-deb5de7401e7",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              },
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:44:00.00606",
+                "id": "b87b3525-3b4f-4c57-b53d-9efa3a2476ae",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:44:00.00606",
+                "ordinal": 240,
+                "payloads": [],
+                "sku": "b1c34025-acdf-4975-96a9-8c7bd09c5f01",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              },
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:44:00.026149",
+                "id": "92e509ac-53c1-4b69-a53c-15a336dd4f7a",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:44:00.026149",
+                "ordinal": 38,
+                "payloads": [],
+                "sku": "1f5c8358-649b-473b-8eb5-20b6023857bd",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              },
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:44:00.00606",
+                "id": "b87b3525-3b4f-4c57-b53d-9efa3a2476ae",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:44:00.00606",
+                "ordinal": 240,
+                "payloads": [],
+                "sku": "b1c34025-acdf-4975-96a9-8c7bd09c5f01",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              },
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:44:00.00606",
+                "id": "b87b3525-3b4f-4c57-b53d-9efa3a2476ae",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:44:00.00606",
+                "ordinal": 240,
+                "payloads": [],
+                "sku": "b1c34025-acdf-4975-96a9-8c7bd09c5f01",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              },
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:44:00.026149",
+                "id": "92e509ac-53c1-4b69-a53c-15a336dd4f7a",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:44:00.026149",
+                "ordinal": 38,
+                "payloads": [],
+                "sku": "1f5c8358-649b-473b-8eb5-20b6023857bd",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              },
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:44:00.026149",
+                "id": "92e509ac-53c1-4b69-a53c-15a336dd4f7a",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:44:00.026149",
+                "ordinal": 38,
+                "payloads": [],
+                "sku": "1f5c8358-649b-473b-8eb5-20b6023857bd",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              },
+              {
+                "contents": [],
+                "createdBy": null,
+                "createdDate": "2026-07-14T18:43:59.955019",
+                "id": "3c9dac24-09e9-49f1-b19a-20c614f1b397",
+                "images": [],
+                "lastModifiedBy": null,
+                "lastModifiedDate": "2026-07-14T18:43:59.955019",
+                "ordinal": 23,
+                "payloads": [],
+                "sku": "c9c89829-9753-458e-a30a-deb5de7401e7",
+                "texts": [],
+                "types": [
+                  "SCRIPT"
+                ],
+                "version": 0
+              }
+            ]
+          }

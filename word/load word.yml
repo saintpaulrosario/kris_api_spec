@@ -13,10 +13,10 @@ http:
         "language": "mande",
         "version": 1,
         "refSheet": {
-          "name": "dialect",
+          "name": "script",
           "index": 9,
           "columns": {
-            "dialect": {
+            "word": {
               "ordinal": 1,
               "reference": {
                 "ordinal": true
