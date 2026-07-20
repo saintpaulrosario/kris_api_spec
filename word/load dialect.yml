@@ -5,9 +5,9 @@ info:
 
 http:
   method: POST
-  url: http://{{ip}}:{{port}}/{{endpoint}}?type=dialect
+  url: http://{{ip}}:{{port}}/{{endpoint}}?maya=dialect
   params:
-    - name: type
+    - name: maya
       value: dialect
       type: query
   body:

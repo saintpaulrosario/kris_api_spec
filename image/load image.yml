@@ -1,0 +1,60 @@
+info:
+  name: load image
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://127.0.0.1:{{port}}/image
+  body:
+    type: json
+    data: |-
+      {
+        "language": "mande",
+        "version": 1,
+        "refSheet": {
+          "name": "image",
+          "index": 9,
+          "columns": {
+            "word": {
+              "ordinal": 3,
+              "reference": {
+                "ordinal": true
+              }
+            },
+            "image":{
+              "ordinal":1,
+              "rank":2
+            }
+          }
+        },
+        "sheet": {
+          "name": "word",
+          "index": 1,
+          "columns": {
+            "word": {
+              "row": 0,
+              "ordinal": 1,
+              "text": 5,
+              "rank": 6,
+              "root": 7
+            },
+            "script": {
+              "ordinal": 2
+            },
+            "language": {
+              "ordinal": 3
+            },
+            "dialect": {
+              "ordinal": 4
+            }
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

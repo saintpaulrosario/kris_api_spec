@@ -5,9 +5,9 @@ info:
 
 http:
   method: POST
-  url: http://{{ip}}:{{port}}/{{endpoint}}?type=language
+  url: http://{{ip}}:{{port}}/{{endpoint}}?maya=language
   params:
-    - name: type
+    - name: maya
       value: language
       type: query
   body:

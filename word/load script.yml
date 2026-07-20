@@ -5,9 +5,9 @@ info:
 
 http:
   method: POST
-  url: http://{{ip}}:{{port}}/{{endpoint}}?type=script
+  url: http://{{ip}}:{{port}}/{{endpoint}}?maya=script
   params:
-    - name: type
+    - name: maya
       value: script
       type: query
   body:
