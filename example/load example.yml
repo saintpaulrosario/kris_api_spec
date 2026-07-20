@@ -12,36 +12,6 @@ http:
       {
         "language": "mande",
         "version": 1,
-        "refSheet": {
-          "name": "example_word",
-          "index": 9,
-          "columns": {
-            "language": {
-              "ordinal": 6
-            },
-            "dialect": {
-              "ordinal": 7
-            },
-            "script": {
-              "ordinal": 5
-            },
-            "word": {
-              "ordinal": 3,
-              "rank": 4,
-              "sheet": {
-                "name": "word"
-              }
-            },
-            "example": {
-              "ordinal": 1,
-              "rank": 2,
-              "reference": {
-                "ordinal": true,
-                "rank": true
-              }
-            }
-          }
-        },
         "sheet": {
           "name": "example",
           "index": 8,

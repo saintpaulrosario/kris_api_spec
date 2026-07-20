@@ -12,18 +12,6 @@ http:
       {
         "language": "mande",
         "version": 1,
-        "refSheet": {
-          "name": "script",
-          "index": 9,
-          "columns": {
-            "word": {
-              "ordinal": 1,
-              "reference": {
-                "ordinal": true
-              }
-            }
-          }
-        },
         "sheet": {
           "name": "word",
           "index": 1,
