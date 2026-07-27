@@ -1,11 +1,11 @@
 info:
-  name: load image
+  name: add image
   type: http
-  seq: 1
+  seq: 3
 
 http:
-  method: POST
-  url: http://127.0.0.1:{{port}}/image
+  method: PUT
+  url: http://127.0.0.1:{{port}}/word/image
   body:
     type: json
     data: |-
@@ -13,9 +13,12 @@ http:
         "script": "latin",
         "version": 1,
         "sheet": {
-          "name": "image",
-          "image": {
+          "name": "word_image",
+          "word": {
             "ordinal": 1
+          },
+          "image": {
+            "ordinal": 2
           }
         }
       }

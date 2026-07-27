@@ -1,0 +1,46 @@
+info:
+  name: add content
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://127.0.0.1:{{port}}/content
+  body:
+    type: json
+    data: |-
+      {
+        "script": "latin",
+        "version": 1,
+        "sheet": {
+          "name": "word_content",
+          "word": {
+            "row": 0,
+            "ordinal": 1,
+            "rank": 2
+          },
+          "language": {
+            "ordinal": 3
+          },
+          "dialect": {
+            "ordinal": 4
+          }
+        },
+        "reference":{
+          "name":"word",
+          "word":{
+            "row":0,
+            "text":3
+          },
+          "script":{
+            "ordinal": 2
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

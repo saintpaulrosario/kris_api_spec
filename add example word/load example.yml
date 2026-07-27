@@ -1,28 +1,31 @@
 info:
-  name: load sound
+  name: load example
   type: http
   seq: 1
 
 http:
   method: POST
-  url: http://127.0.0.1:{{port}}/sound
+  url: http://{{ip}}:{{port}}/example
   body:
     type: json
     data: |-
       {
         "language": "mande",
         "version": 1,
-        "name": "sound",
         "sheet": {
-          "index": 1,
+          "name": "example",
+          "index": 8,
           "columns": {
-            "sound": {
+            "example": {
               "row": 0,
               "ordinal": 1,
-              "rank": 2
+              "rank": 2,
+              "text": 4
             },
-            "dialect": {
-              "ordinal": 1
+            "script": {
+              "row": 0,
+              "ordinal": 3,
+              "rank": 0
             }
           }
         }

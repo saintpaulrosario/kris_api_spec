@@ -1,0 +1,48 @@
+info:
+  name: load example  word
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: http://{{ip}}:{{port}}/example/word
+  body:
+    type: json
+    data: |-
+      {
+        "language": "mande",
+        "version": 1,
+        "sheet": {
+          "name": "example_word",
+          "index": 8,
+          "columns": {
+            "example": {
+              "row": 0,
+              "ordinal": 1,
+              "rank": 2
+            },
+            "word": {
+              "ordinal": 3,
+              "rank": 4
+            },
+            "script": {
+              "row": 0,
+              "ordinal": 5,
+              "rank": 0
+            },
+            "language": {
+              "ordinal": 6
+            },
+            "dialect": {
+              "ordinal": 7
+            }
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

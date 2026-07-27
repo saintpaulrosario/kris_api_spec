@@ -1,26 +1,37 @@
 info:
-  name: load word
+  name: https://dev-kris.onrender.com/
   type: http
-  seq: 1
+  seq: 2
 
 http:
-  method: POST
-  url: http://{{ip}}:{{port}}/{{endpoint}}
+  method: GET
+  url: https://dev-kris.onrender.com/{{endpoint}}
   body:
     type: json
     data: |-
       {
-        "script": "latin",
+        "language": "mande",
         "version": 1,
         "sheet": {
-          "name":"word",
-          "word": {
-            "row": 0,
-            "ordinal": 1,
-            "text": 3
-          },
-          "script": {
-            "ordinal": 2
+          "name": "word",
+          "index": 1,
+          "columns": {
+            "word": {
+              "row": 0,
+              "ordinal": 1,
+              "text": 5,
+              "rank": 6,
+              "root": 7
+            },
+            "script": {
+              "ordinal": 2
+            },
+            "language": {
+              "ordinal": 3
+            },
+            "dialect": {
+              "ordinal": 4
+            }
           }
         }
       }
