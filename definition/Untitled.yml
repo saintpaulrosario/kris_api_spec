@@ -1,5 +1,5 @@
 info:
-  name: load example
+  name: Untitled
   type: http
   seq: 1
 
@@ -14,11 +14,9 @@ http:
         "version": 1,
         "sheet": {
           "name": "word",
-          "index": 8,
           "word": {
             "row": 0,
-            "ordinal": 1,
-            "text": 3
+            "ordinal": 1
           },
           "script": {
             "ordinal": 2
@@ -26,7 +24,6 @@ http:
         },
         "reference": {
           "name": "example",
-          "index": 8,
           "word": {
             "row": 0,
             "ordinal": 1,

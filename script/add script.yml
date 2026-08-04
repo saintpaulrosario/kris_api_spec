@@ -1,11 +1,11 @@
 info:
-  name: load example
+  name: add script
   type: http
   seq: 1
 
 http:
   method: POST
-  url: http://{{ip}}:{{port}}/example
+  url: http://{{ip}}:{{port}}/script
   body:
     type: json
     data: |-
@@ -14,7 +14,6 @@ http:
         "version": 1,
         "sheet": {
           "name": "word",
-          "index": 8,
           "word": {
             "row": 0,
             "ordinal": 1,
@@ -24,20 +23,11 @@ http:
             "ordinal": 2
           }
         },
-        "reference": {
-          "name": "example",
-          "index": 8,
-          "word": {
-            "row": 0,
-            "ordinal": 1,
-            "rank": 2,
-            "text": 5
-          },
-          "language": {
-            "ordinal": 3
-          },
-          "dialect": {
-            "ordinal": 4
+        "reference":{
+          "name":"script",
+          "word":{
+            "row":0,
+            "ordinal":1
           }
         }
       }

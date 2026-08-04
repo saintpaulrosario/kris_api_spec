@@ -1,16 +1,16 @@
 info:
-  name: load word
+  name: load word latin
   type: http
-  seq: 1
+  seq: 4
 
 http:
-  method: GET
+  method: POST
   url: http://{{ip}}:{{port}}/{{endpoint}}
   body:
     type: json
     data: |-
       {
-        "script": "arama",
+        "script": "latin",
         "version": 1,
         "sheet": {
           "name": "word",
@@ -21,21 +21,6 @@ http:
           },
           "script": {
             "ordinal": 2
-          }
-        },
-        "converter": {
-          "numberSystem": "additive",
-          "pairs": {
-            "ܝ": "10",
-            "ܐ": "1",
-            "ܒ": "2",
-            "ܓ": "3",
-            "ܕ": "4",
-            "ܗ": "5",
-            "ܘ": "6",
-            "ܙ": "7",
-            "ܚ": "8",
-            "ܛ": "9"
           }
         }
       }

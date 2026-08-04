@@ -1,11 +1,11 @@
 info:
-  name: load example
+  name: add content latin
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
-  url: http://{{ip}}:{{port}}/example
+  url: http://127.0.0.1:{{port}}/content
   body:
     type: json
     data: |-
@@ -13,25 +13,11 @@ http:
         "script": "latin",
         "version": 1,
         "sheet": {
-          "name": "word",
-          "index": 8,
+          "name": "word_content",
           "word": {
             "row": 0,
             "ordinal": 1,
-            "text": 3
-          },
-          "script": {
-            "ordinal": 2
-          }
-        },
-        "reference": {
-          "name": "example",
-          "index": 8,
-          "word": {
-            "row": 0,
-            "ordinal": 1,
-            "rank": 2,
-            "text": 5
+            "rank": 2
           },
           "language": {
             "ordinal": 3
